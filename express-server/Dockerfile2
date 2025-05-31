@@ -1,8 +1,6 @@
-FROM node:18
+WORKDIR /app/express-server/bin
 
-WORKDIR /app
-
-COPY package*.json ./
+COPY package*.json ./ 
 RUN npm install
 
 COPY . .
